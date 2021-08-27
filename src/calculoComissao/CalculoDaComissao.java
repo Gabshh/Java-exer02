@@ -22,12 +22,12 @@ public class CalculoDaComissao {
 		
 		leitor.close();
 		
-		if (vendas > 10.000 && vendas < 20.000 && anos >= 1) {
+		if (vendas >= 10.000 && vendas < 20.000 && anos >= 1) {
 			int valor = (5 * vendas / 100);
 			System.out.println(" ");
 			System.out.println("O(a) vendedor(a) " + nome + " receberá 5% de comissão, resultando em: " + valor);
 			
-		}else if (vendas > 20.000 && anos >= 1) {
+		}else if (vendas >= 20.000 && anos >= 1) {
 			int valor = (10 * vendas / 100);
 			System.out.println(" ");
 			System.out.println("O(a) vendedor(a) " + nome + " receberá 10% de comissão, resultando em: " + valor);
