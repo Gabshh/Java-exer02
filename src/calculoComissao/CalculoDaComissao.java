@@ -20,6 +20,8 @@ public class CalculoDaComissao {
 		System.out.print("Qual o valor total de vendas?");
 		vendas = leitor.nextInt();
 		
+		leitor.close();
+		
 		if (vendas > 10.000 && vendas < 20.000 && anos >= 1) {
 			int valor = (5 * vendas / 100);
 			System.out.println(" ");
